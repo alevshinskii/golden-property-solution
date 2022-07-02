@@ -1,5 +1,5 @@
 @import 'reset.scss';
-@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@200;300;400;600;800&family=Open+Sans:wght@700&family=Work+Sans:wght@700;900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@200;300;400;600;800;900&family=Open+Sans:wght@700&family=Work+Sans:wght@700;900&display=swap');
 
 
 $purplecolor:#24173D;
@@ -323,6 +323,7 @@ main{
             legend{
                 padding-left: 41px;
                 padding-right: 41px;
+                white-space: nowrap;
             }
         }
     }
@@ -415,6 +416,101 @@ main{
 
 
     }
+
+    .statistics-block{
+        font-family: 'Montserrat';
+        font-style: normal;
+        text-transform: uppercase;
+        color: $purplecolor;
+
+        .row{
+            display: flex;
+            flex-direction: row;
+            justify-content: space-between;
+            margin-top: 108px;
+            .title{
+                margin-left: 75px;
+                display: flex;
+                flex-direction: row;
+                align-items: center;
+                .figure{
+                    width: 5px;
+                    height: 263px;
+    
+                    background: $purplecolor;
+                }
+                
+                h3{
+                    margin-left: 30px;
+                    font-weight: 900;
+                    font-size: 44px;
+                    line-height: 175%;
+                }
+            }
+            .right-block{
+                display: flex;
+                flex-direction: row;
+                align-self: end;
+                align-items: center;
+                padding: 50px;
+                gap: 89px;
+
+                width: 1017px;
+                height: 321px;
+
+                background: #FFC633;
+                box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+                border-radius: 30px 0px 0px 30px;
+                text-align: center;
+                .separator-v{
+                    width: 3px;
+                    height: 146px;
+
+                    background: white;
+                    opacity: 0.2;
+                }
+                .card{
+                    display: flex;
+                    flex-direction: column;
+                    align-items: center;
+                    justify-content: space-around;
+                    font-weight: 600;
+                    font-size: 18px;
+                    line-height: 22px;
+                    text-align: center;
+                    color: white;
+                    .percent-block{
+                        display: flex;
+                        flex-direction: column;
+                        align-items: center;
+                        height: 93px;
+                        .separator-h{
+                            width: 100%;
+                            height: 2px;
+                            background: white;
+                        }
+                        margin-top: 20px;
+                        margin-bottom: 20px;
+                        
+                        .percent-label{
+                            color:$purplecolor;
+                            font-weight: 800;
+                            font-size: 70px;
+                            line-height:85px;
+                            span{
+                                line-height:30px;
+                                font-size: 30px;
+                                margin: 0;
+                                padding: 0;
+                            }
+                        }
+                    }
+                }
+            }
+        }
+    }
+
+    
 }
 
 footer{
