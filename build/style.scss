@@ -1,6 +1,18 @@
 @import 'reset.scss';
 @import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@200;300;400;600;800;900&family=Open+Sans:wght@700&family=Work+Sans:wght@700;900&display=swap');
 
+@font-face {
+    font-family: 'Century Gothic';
+    src: url('../styles/fonts/CenturyGothic.eot');
+    src: url('../styles/fonts/CenturyGothic.eot?#iefix') format('embedded-opentype'),
+        url('../styles/fonts/CenturyGothic.woff2') format('woff2'),
+        url('../styles/fonts/CenturyGothic.woff') format('woff'),
+        url('../styles/fonts/CenturyGothic.svg#CenturyGothic') format('svg');
+    font-weight: normal;
+    font-style: normal;
+    font-display: swap;
+}
+
 
 $purplecolor:#24173D;
 $yellowcolor:#FFC633;
@@ -418,16 +430,17 @@ main{
     }
 
     .statistics-block{
+        background-color: white;
         font-family: 'Montserrat';
         font-style: normal;
         text-transform: uppercase;
         color: $purplecolor;
-
         .row{
             display: flex;
             flex-direction: row;
             justify-content: space-between;
             margin-top: 108px;
+            margin-bottom: 110px;
             .title{
                 margin-left: 75px;
                 display: flex;
@@ -510,9 +523,129 @@ main{
         }
     }
 
+    .getconsult-block{
+
+        height: 100%;
+        background-image: url("../content/background2.png");
+        font-family: 'Montserrat';
+        font-style: normal;
+
+        .title{
+            padding-top: 68px;
+            h3{
+                margin-bottom: 60px;
     
+                font-weight: 400;
+                font-size: 30px;
+                text-align: center;
+                color: white;
+                line-height: 220%;
+                span{
+                    font-weight: 800;
+                    font-size: 44px;
+                }
+            }
+        }
+        .input-group{
+            display: flex;
+            justify-content: center;
+            padding-bottom: 72px;
+            input{
+                background: white;
+                border-radius: 5px;
+                padding: 20px;
+                width: 385px;
+                font-weight: 400;
+                font-size: 14px;
+                color: #383838;
+                margin-right: 20px;
+                &::placeholder{
+                    opacity: 0.5;
+                }
+            }
+            button{
+                display: flex;
+                flex-direction: row;
+                justify-content: center;
+                align-items: center;
+                padding: 0px;
+
+                width: 250px;
+                height: 57px;
+
+                background: #FFC633;
+                border-radius: 5px;
+
+
+                font-weight: 700;
+                font-size: 18px;
+                text-transform: uppercase;
+            }
+        }
+    }
+
 }
 
 footer{
-    margin-top: 200px;
+    .logo-container{
+        display: flex;
+        justify-content: center;
+        .logo{
+            margin-top: 70px;
+            margin-bottom: 40px;
+    
+            display: flex;
+            flex-direction: column;
+
+            font-family: "Work Sans", sans-serif;
+            h1{
+                font-size: 80.78px;
+                font-style: normal;
+                line-height: 68px;
+                font-weight: 900;
+                background: linear-gradient(90deg, #2A2D3E 0%, #FFC633 100%);
+                -webkit-background-clip: text;
+                -webkit-text-fill-color: transparent;
+                background-clip: text;
+                letter-spacing: 18px;
+            }
+            h2{
+                color: $purplecolor;
+                text-transform: uppercase;
+            }
+            .desc{
+                font-style: normal;
+                font-weight: 700;
+                font-size: 12.9255px;
+                line-height: 15px;
+            }
+        }
+    }
+
+    .info{
+        background: rgba(230, 229, 234, 0.15) ;
+        text-align: center;
+        padding-top: 15px;
+        padding-bottom: 15px;
+
+        p{
+            font-family: 'Century Gothic';
+            font-style: normal;
+            font-weight: 400;
+            font-size: 14px;
+            line-height: 17px;
+            text-align: center;
+
+            color: #4A4A4A;
+
+            a{
+                color: #F8B500;
+                text-decoration: underline;
+                text-decoration-color: #F8B500;
+            }
+        }
+    }
+
+
+
 }
