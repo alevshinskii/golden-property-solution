@@ -265,8 +265,129 @@ main .benefits {
   margin-bottom: 44px;
   text-align: center; }
   main .benefits fieldset {
-    border: 5px solid #030303;
-    border-radius: 20px; }
+    border: 5px solid black;
+    border-radius: 20px;
+    box-shadow: 0.3em 0.3em rgba(0, 0, 0, 0.1); }
+    main .benefits fieldset legend {
+      font-family: 'Montserrat';
+      font-style: normal;
+      font-weight: 700;
+      font-size: 44px;
+      line-height: 136%;
+      text-align: center;
+      padding-left: 40px;
+      padding-right: 40px;
+      color: #24173D;
+      background-color: white; }
+    main .benefits fieldset .container {
+      display: flex;
+      flex-direction: column; }
+      main .benefits fieldset .container .row {
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+        margin-left: 80px;
+        margin-right: 80px; }
+      main .benefits fieldset .container .row:first-child {
+        margin-top: 70px;
+        margin-bottom: 93px; }
+      main .benefits fieldset .container .row:last-child {
+        margin-bottom: 90px; }
+      main .benefits fieldset .container .benefit {
+        height: 80;
+        width: 33%;
+        display: flex;
+        justify-content: start;
+        align-items: center; }
+      main .benefits fieldset .container label {
+        font-family: 'Montserrat';
+        font-style: normal;
+        font-weight: 300;
+        font-size: 24px;
+        line-height: 29px;
+        letter-spacing: 0.05em;
+        color: #24173D;
+        text-align: start;
+        margin-left: 30px; }
+  main .benefits .borders {
+    border: 3px solid #EEEAF4;
+    border-radius: 20px;
+    margin-top: -478px;
+    margin-left: 1px;
+    margin-right: 1px; }
+    main .benefits .borders * {
+      visibility: hidden; }
+    main .benefits .borders .extender {
+      height: 91px; }
+    main .benefits .borders legend {
+      padding-left: 41px;
+      padding-right: 41px; }
+main .immovables-block h3 {
+  font-family: 'Montserrat';
+  font-style: normal;
+  font-weight: 700;
+  font-size: 44px;
+  line-height: 136%;
+  text-align: center;
+  color: #24173D;
+  margin-bottom: 59px; }
+main .immovables-block .card {
+  background-repeat: no-repeat;
+  display: flex;
+  flex-direction: column;
+  justify-content: end;
+  align-items: center;
+  font-family: 'Montserrat';
+  font-style: normal;
+  font-weight: 600;
+  font-size: 24px;
+  line-height: 29px;
+  text-align: center;
+  letter-spacing: 0.05em;
+  color: white; }
+  main .immovables-block .card button {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    padding: 10px 20px;
+    gap: 10px;
+    width: 258px;
+    height: 46px;
+    margin-top: 20px;
+    margin-bottom: 30px;
+    background: #FAC86E;
+    box-shadow: 4px 4px 8px rgba(23, 55, 95, 0.2);
+    border-radius: 30px;
+    font-family: 'Montserrat';
+    font-style: normal;
+    font-weight: 600;
+    font-size: 16px;
+    line-height: 20px;
+    /* identical to box height */
+    text-align: center;
+    color: #24173D; }
+main .immovables-block .row {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  height: 416px; }
+  main .immovables-block .row:first-child {
+    margin-bottom: 1px; }
+    main .immovables-block .row:first-child .card {
+      width: 33.3%; }
+      main .immovables-block .row:first-child .card:nth-child(1) {
+        background-image: url("../content/studia.png"); }
+      main .immovables-block .row:first-child .card:nth-child(2) {
+        background-image: url("../content/appartament.png"); }
+      main .immovables-block .row:first-child .card:nth-child(3) {
+        background-image: url("../content/penthouse.png"); }
+  main .immovables-block .row:last-child .card {
+    width: 49.99%; }
+    main .immovables-block .row:last-child .card:nth-child(1) {
+      background-image: url("../content/townhouse.png"); }
+    main .immovables-block .row:last-child .card:nth-child(2) {
+      background-image: url("../content/villa.png"); }
 
 footer {
   margin-top: 200px; }

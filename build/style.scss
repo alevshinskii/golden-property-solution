@@ -249,15 +249,171 @@ main{
             }
         }
     }
+
     .benefits{
         margin-left: 70px;
         margin-right: 70px;
         margin-bottom: 44px;
         text-align: center;
         fieldset{
-            border: 5px solid #030303;
+            border: 5px solid black;
             border-radius: 20px;
+            box-shadow: 0.3em 0.3em rgba(0,0,0,0.1);
+            legend{
+                font-family: 'Montserrat';
+                font-style: normal;
+                font-weight: 700;
+                font-size: 44px;
+                line-height: 136%;
+                text-align: center;
+                padding-left: 40px;
+                padding-right: 40px;
+                color: $purplecolor;
+                background-color: white;
+            }
+            .container{
+                display: flex;
+                flex-direction: column;
+                .row{
+                    display: flex;
+                    flex-direction: row;
+                    justify-content: space-between;
+                    margin-left: 80px;
+                    margin-right: 80px;
+                }
+                .row:first-child{
+                    margin-top: 70px;
+                    margin-bottom: 93px;
+                }
+                .row:last-child{
+                    margin-bottom: 90px;
+                }
+                .benefit{
+                    height: 80;
+                    width: 33%;
+                    display: flex;
+                    justify-content: start;
+                    align-items: center;
+                }
+                label{
+                    font-family: 'Montserrat';
+                    font-style: normal;
+                    font-weight: 300;
+                    font-size: 24px;
+                    line-height: 29px;
+                    letter-spacing: 0.05em;
+                    color: $purplecolor;
+                    text-align: start;
+                    margin-left: 30px;
+                }
+            }
         }
+        .borders{
+            & *{
+                visibility: hidden;
+            }
+            border: 3px solid #EEEAF4;
+            border-radius: 20px;
+            margin-top: -478px;
+            .extender{
+                height: 91px;
+            }
+            margin-left:1px;
+            margin-right: 1px;
+            legend{
+                padding-left: 41px;
+                padding-right: 41px;
+            }
+        }
+    }
+
+    .immovables-block{
+        h3{
+            font-family: 'Montserrat';
+            font-style: normal;
+            font-weight: 700;
+            font-size: 44px;
+            line-height: 136%;
+            text-align: center;
+            color: $purplecolor;
+            margin-bottom: 59px;
+        }
+        .card{
+            background-repeat: no-repeat;
+            display: flex;
+            flex-direction: column;
+            justify-content: end;
+            align-items: center;
+
+            font-family: 'Montserrat';
+            font-style: normal;
+            font-weight: 600;
+            font-size: 24px;
+            line-height: 29px;
+            text-align: center;
+            letter-spacing: 0.05em;
+            color: white;
+            button{
+                display: flex;
+                flex-direction: row;
+                justify-content: center;
+                align-items: center;
+                padding: 10px 20px;
+                gap: 10px;
+                width: 258px;
+                height: 46px;
+                margin-top: 20px;
+                margin-bottom: 30px;
+                background: #FAC86E;
+                box-shadow: 4px 4px 8px rgba(23, 55, 95, 0.2);
+                border-radius: 30px;
+
+                font-family: 'Montserrat';
+                font-style: normal;
+                font-weight: 600;
+                font-size: 16px;
+                line-height: 20px;
+                /* identical to box height */
+
+                text-align: center;
+
+                color: $purplecolor;
+            }
+        }
+        .row{
+            display: flex;
+            flex-direction: row;
+            justify-content: space-between;
+            height: 416px;
+            &:first-child{
+                margin-bottom: 1px;
+                .card{
+                    width:33.3%;
+                    &:nth-child(1){
+                        background-image: url("../content/studia.png");
+                    }
+                    &:nth-child(2){
+                        background-image: url("../content/appartament.png");
+                    }
+                    &:nth-child(3){
+                        background-image: url("../content/penthouse.png");
+                    }
+                }
+            }
+            &:last-child{
+                .card{
+                    width:49.99%;
+                    &:nth-child(1){
+                        background-image: url("../content/townhouse.png");
+                    }
+                    &:nth-child(2){
+                        background-image: url("../content/villa.png");
+                    }
+                }
+            }
+        }
+
+
     }
 }
 
