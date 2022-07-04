@@ -202,7 +202,8 @@ main .block-1 {
     width: 890px;
     height: 461px;
     margin-top: 56px;
-    margin-right: 169px;
+    margin-left: 5%;
+    margin-right: 5%;
     background: #FFC633;
     box-shadow: inset 0 -3em 3em rgba(0, 0, 0, 0.1), 0.3em 0.3em 1em rgba(0, 0, 0, 0.3);
     border-radius: 30px;
@@ -230,21 +231,25 @@ main .block-1 {
         font-size: 20px;
         line-height: 60px;
         color: white; }
-    main .block-1 .contact-form .inputs input {
-      margin-top: 10px;
-      width: 385px;
-      height: 65px;
-      background: white;
-      border-radius: 5px;
-      font-family: 'Montserrat';
-      font-style: normal;
-      font-weight: 200;
-      font-size: 19px;
-      line-height: 23px;
-      color: #5C5C5C;
-      padding-left: 20px;
-      margin-right: 7px;
-      margin-left: 7px; }
+    main .block-1 .contact-form .inputs {
+      width: 100%;
+      display: flex;
+      justify-content: center; }
+      main .block-1 .contact-form .inputs input {
+        margin-top: 10px;
+        width: 45%;
+        height: 65px;
+        background: white;
+        border-radius: 5px;
+        font-family: 'Montserrat';
+        font-style: normal;
+        font-weight: 200;
+        font-size: 19px;
+        line-height: 23px;
+        color: #5C5C5C;
+        padding-left: 20px;
+        margin-right: 7px;
+        margin-left: 7px; }
     main .block-1 .contact-form button {
       margin-top: 30px;
       height: 65px;
@@ -317,19 +322,17 @@ main .benefits {
         text-align: start;
         margin-left: 30px; }
   main .benefits .borders {
+    position: absolute;
     border: 3px solid #EEEAF4;
     border-radius: 20px;
-    margin-top: -478px;
-    margin-left: 1px;
-    margin-right: 1px; }
-    main .benefits .borders * {
-      visibility: hidden; }
-    main .benefits .borders .extender {
-      height: 91px; }
+    left: 1px;
+    right: 1px; }
     main .benefits .borders legend {
       padding-left: 41px;
       padding-right: 41px;
       white-space: nowrap; }
+    main .benefits .borders .extender {
+      height: 91px; }
 main .immovables-block h3 {
   font-family: 'Montserrat';
   font-style: normal;
